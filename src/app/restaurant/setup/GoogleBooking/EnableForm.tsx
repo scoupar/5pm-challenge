@@ -46,7 +46,7 @@ export default function EnableForm() {
             Enable or Disable Google Maps Booking
           </h3>
         </div>
-        <form className="sm:px-6 py-4">
+        <form className="px-6 py-4">
           <div className="bg-white inline-flex flex-row flex-auto py-3">
             <input
               name="radiobutton"
@@ -74,13 +74,13 @@ export default function EnableForm() {
           </div>
           {enabled === "true" ? (
             <div>
-              <div className="flex justify-between">
-                <label htmlFor="Name" className={labelStyle}>
-                  Name - Required
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Name" className={labelStyle}>
+                    Name - Required
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
@@ -90,45 +90,47 @@ export default function EnableForm() {
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Name" className={labelStyle}>
-                  Public URL
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
               <div className="w-full max-w-md mb-6">
                 <div className="mt-1 relative rounded-md shadow-sm">
+                  <div className="flex justify-between">
+                    <label htmlFor="PublicUrl" className={labelStyle}>
+                      Public URL
+                    </label>
+                    <span className={requiredStyle}>Required</span>
+                  </div>
                   <input
                     type="text"
-                    id="Name"
-                    name="name"
+                    id="PublicUrl"
+                    name="PublicUrl"
                     className={inputStyle}
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Name" className={labelStyle}>
-                  Phone
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Phone" className={labelStyle}>
+                    Phone
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
-                    id="Name"
-                    name="name"
+                    id="Phone"
+                    name="Phone"
                     className={inputStyle}
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Postcode" className={labelStyle}>
-                  Postcode
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Postcode" className={labelStyle}>
+                    Postcode
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
@@ -138,13 +140,14 @@ export default function EnableForm() {
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Locality" className={labelStyle}>
-                  Locality
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Locality" className={labelStyle}>
+                    Locality
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
@@ -154,13 +157,14 @@ export default function EnableForm() {
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Country" className={labelStyle}>
-                  Country
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Country" className={labelStyle}>
+                    Country
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <select id="Country" name="Country" className={inputStyle}>
                     {countryList.map(function (country) {
@@ -173,13 +177,13 @@ export default function EnableForm() {
                   </select>
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Region" className={labelStyle}>
-                  Region
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Region" className={labelStyle}>
+                    Region
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <select id="Region" name="Region" className={inputStyle}>
                     {regionList.map(function (region) {
@@ -192,13 +196,14 @@ export default function EnableForm() {
                   </select>
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Longitude" className={labelStyle}>
-                  Longitude
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Longitude" className={labelStyle}>
+                    Longitude
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
@@ -209,13 +214,13 @@ export default function EnableForm() {
                   />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <label htmlFor="Latitude" className={labelStyle}>
-                  Latitude
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Latitude" className={labelStyle}>
+                    Latitude
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     type="text"
@@ -231,13 +236,14 @@ export default function EnableForm() {
               </label>
               <TextEditor />
               <br></br>
-              <div className="flex justify-between">
-                <label htmlFor="Cancellation" className={labelStyle}>
-                  Cancellation in advance
-                </label>
-                <span className={requiredStyle}>Required</span>
-              </div>
+
               <div className="w-full max-w-md mb-6">
+                <div className="flex justify-between">
+                  <label htmlFor="Cancellation" className={labelStyle}>
+                    Cancellation in advance
+                  </label>
+                  <span className={requiredStyle}>Required</span>
+                </div>
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <select
                     id="Cancellation"
